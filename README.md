@@ -320,6 +320,10 @@ curl -i -X POST -F "file=@big.jpg" http://<EC2_PUBLIC_IP>/upload
 Expect **413**.
 
 ---
+## Architecture Diagram
+<img width="1536" height="1024" alt="FastAPI-S3-Photo-App-Architecture-Diagram" src="https://github.com/user-attachments/assets/e2ee2534-f04c-4f5e-9ee9-043a751c293f" />
+
+---
 
 ## Troubleshooting quick reference
 
