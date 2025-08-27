@@ -1,0 +1,1 @@
+"""FastAPI Photo App package."""
