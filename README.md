@@ -157,9 +157,9 @@ After=network.target
 
 [Service]
 User=ubuntu
-WorkingDirectory=/home/ubuntu/fastapi-photo
-Environment="PYTHONPATH=/home/ubuntu/fastapi-photo"
-ExecStart=/home/ubuntu/fastapi-photo/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 2
+WorkingDirectory=/home/ubuntu/Fast-API-Photo-App
+Environment="PYTHONPATH=/home/ubuntu/Fast-API-Photo-App"
+ExecStart=/home/ubuntu/Fast-API-Photo-App/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 2
 Restart=always
 
 [Install]
