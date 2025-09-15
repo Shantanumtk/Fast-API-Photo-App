@@ -5,9 +5,13 @@ from fastapi import FastAPI, UploadFile, File, Request, HTTPException
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from dotenv import load_dotenv
+
+# Load environment variables from .env in project root
+load_dotenv()
 
 # ----- Settings (env) -----
-BUCKET_NAME       = os.getenv("BUCKET_NAME", "fastapi-photo-app-nik")
+BUCKET_NAME       = os.getenv("BUCKET_NAME", "fastapi-photo-app-yourname")
 AWS_REGION        = os.getenv("AWS_REGION",  "us-east-1")
 MAX_UPLOAD_MB     = int(os.getenv("MAX_UPLOAD_MB", "10"))  # limit uploads (MB)
 ALLOWED_EXTS      = {"jpg", "jpeg", "png", "gif", "webp"}
